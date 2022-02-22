@@ -1,54 +1,62 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
 body{
     background-color: rgba(231, 226, 226, 0.582);
 }
-.heading{
+
+header{
     text-align: center;
-    margin-top: 4%;
+    padding:0 100px;
+    margin:50px auto;
 }
-p{
-    font-size: 20px;
-}
-.container{
-    margin-top: 60px;
-    display: flex;
-    gap: 20px;   
-    justify-content: center; 
+  
+.grid-container{
+    display:flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    max-width: 1120px;
+    justify-content: center;
 }
-.box{
-    background-color: white;
-    height: 200px;
+
+.card{
+    background:white;
+    margin:20px;
+    padding: 20px 50px;
     border-radius: 10px;
-    box-shadow: 0 3px 3px;
-    padding: 30px 30px 0 50px;
-    margin: 10px;
-    width: 260px;
+    box-shadow:1px 1px 1px 1px rgba(0,0,0,0.5);
 }
-.box-push{
-    transform: translateY(50%);
-}
-h2{
-    margin-top: -10px;
-}
-p1{
-    font-size: 20px;
+.card p{
+    width:250px;
 }
 img{
-    float: right;
-    margin-right: 20px;
-    transform: translateY(25%);
+    margin:30px auto;
+    width:50px;
+    float:right;
+}
+.supervisor{
+    border-top:3px solid cyan;
+}
+.team-builder{
+    border-top: 3px solid firebrick;
+}
+.karma{
+    border-top: 3px solid orange;
+    
+}
+.calculator{
+    border-top: 3px solid blue;
 }
 
-
-
-@media screen and (max-width:768px){
-    .container{
-        width: 10rem;
+@media (min-width:1020px){
+    .down{
+        transform: translateY(50%);
     }
-    .box-push{
-        transform: translateY(0);
+    .grid-container{
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
     }
 }
   
