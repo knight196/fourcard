@@ -27,6 +27,9 @@ header{
     border-radius: 10px;
     box-shadow:1px 1px 1px 1px rgba(0,0,0,0.5);
 }
+.card h2{
+    font-size:20px;
+}
 .card p{
     width:250px;
 }
